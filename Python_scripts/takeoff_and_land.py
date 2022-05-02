@@ -17,7 +17,7 @@ def connectMyCopter():
     return vehicle
 
 ###Function to arm the drone and takeoff
-def arm_and_takeoff(aTargetAlitude):
+def arm_and_takeoff(aTargetAltitude):
     while not vehicle.is_armable:
         print("waiting for vehicle to be armable")
         time.sleep(1)
